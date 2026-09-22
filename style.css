@@ -35,6 +35,65 @@ nav, .navbar {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Global Fix for Laptop & Mobile --- */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Mobile Responsive Fix (Screens under 768px) --- */
+@media (max-width: 768px) {
+  /* Header / Navbar fix */
+  header, nav, .navbar {
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 10px !important;
+  }
+
+  nav ul, .nav-links {
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 0 !important;
+    gap: 10px !important;
+  }
+
+  /* Headings & Text Overflow fix */
+  h1, h2, .hero-title, .about-title {
+    font-size: 1.8rem !important;
+    word-break: break-word !important;
+    text-align: center !important;
+  }
+
+  p {
+    font-size: 0.95rem !important;
+  }
+}
+
+  
+
+
 img {
   max-width: 100%;
   height: auto;
@@ -46,13 +105,6 @@ img {
   width: 100%;
   padding: 0 15px;
 }
-
-
-
-
-
-
-
 
 .header{
     position: fixed;
